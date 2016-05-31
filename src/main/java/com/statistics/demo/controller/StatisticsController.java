@@ -16,6 +16,13 @@ public class StatisticsController {
 		return mav;
 	}
 	
+	@RequestMapping(value = "/basicLine.do",method=RequestMethod.GET)
+	public ModelAndView showBasicLine() {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("basicLine");
+		return mav;
+	}
+	
 //	@RequestMapping(value = "/home.do",method=RequestMethod.GET)
 //	public String index(){
 //		return "index";
